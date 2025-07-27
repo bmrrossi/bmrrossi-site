@@ -17,7 +17,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </Link>
           
           <nav className="hidden md:flex space-x-8">
-            {['About', 'Projects', 'Blog', 'Contact'].map((item) => (
+            {['About', 'Projects', 'Contact'].map((item) => (
               <Link 
                 key={item}
                 href={`/${item.toLowerCase()}`}
@@ -62,10 +62,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
       <footer className="border-t border-dark-600 py-8 mt-16">
         <div className="container mx-auto px-4 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Bruno Michel Rossi. All rights reserved.</p>
-          <p className="mt-2 text-sm">
-            Built with <span className="text-accent">Next.js</span> and <span className="text-accent">Tailwind CSS</span>
-          </p>
+          <p>© {new Date().getFullYear()} Bruno Michel Rossi. All rights reserved.</p>          
         </div>
       </footer>
     </div>
